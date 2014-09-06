@@ -8,26 +8,28 @@
 
 #include "Arduino.h"
 
+typedef enum {LEFT, RIGHT, NONE} direction;
+
 class L298N
 {
-  public:
-    enum direction {LEFT, RIGHT};
+    public:
+        L298N(int EN, int INA, int INB);
 
-    L298N(int EN, int INA, int INB);
+        void stop();
+        void brake();
 
-    void stop();
-    void brake();
+        bool setSpeed(int percentage);
+        int  getSpeed();
 
-    void setSpeed(int percentage);
-    int  getSpeed();
+        void      setDirection(direction);
+        direction getDirection();
 
-    void      setDirection(direction);
-    direction getDirection();
-
-  private:
-    int _EN;
-    int _INA;
-    int _INB;
+    private:
+        int _EN;
+        int _INA;
+        int _INB;
+        int _speed;
+        direction _direction;
 };
 
 #endif
