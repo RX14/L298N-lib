@@ -21,6 +21,8 @@ L298N::L298N(int EN, int INA, int INB)
 void L298N::stop()
 {
     digitalWrite(_EN , LOW);
+    digitalWrite(_INA, LOW);
+    digitalWrite(_INB, LOW);
 }
 
 void L298N::brake()
