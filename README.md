@@ -27,7 +27,7 @@ You can now use these functions on this object:
 ------------------------------
 This will set the direction of the motor attached to the driver. Please note that for the motor to run, you must also set the speed.
 
-Also note that the directions are completeley arbitrary, because it depends on which way you have connected the motor and which way round you have connected the Input 1 and Input 2.
+Also note that the directions are completely arbitrary, because it depends on which way you have connected the motor and which way round you have connected the Input 1 and Input 2.
 
 ```c
 motor.setDirection(LEFT);
