@@ -8,7 +8,7 @@
 
 #include "Arduino.h"
 
-typedef enum {LEFT, RIGHT} direction;
+typedef enum {LEFT, RIGHT, NONE} direction;
 
 class L298N
 {

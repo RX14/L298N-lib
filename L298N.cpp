@@ -23,6 +23,9 @@ void L298N::stop()
     digitalWrite(_EN , LOW);
     digitalWrite(_INA, LOW);
     digitalWrite(_INB, LOW);
+
+    _speed = 0;
+    _direction = NONE;
 }
 
 void L298N::brake()
@@ -30,6 +33,9 @@ void L298N::brake()
     digitalWrite(_EN , HIGH);
     digitalWrite(_INA, HIGH);
     digitalWrite(_INB, HIGH);
+
+    _speed = 0;
+    _direction = NONE;
 }
 
 bool L298N::setSpeed(int percentage)
@@ -61,6 +67,10 @@ void L298N::setDirection(direction d)
         case RIGHT:
             digitalWrite(_INA, LOW);
             digitalWrite(_INB, HIGH);
+            break;
+
+        case NONE:
+            stop();
             break;
     }
 
