@@ -45,8 +45,6 @@ void L298N::setSpeed(int percentage)
     int speed = percentage * 2.55;
     analogWrite(_EN, speed);
     _speed = percentage;
-
-    return true;
 }
 
 int L298N::getSpeed()
