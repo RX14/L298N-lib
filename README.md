@@ -37,11 +37,11 @@ or
 motor.setDirection(RIGHT);
 ```
 
-`bool setSpeed(int percentage)`
+`void setSpeed(int percentage)`
 -------------------------------
 This will set the speed of the motor attached to the driver. Please note that for the motor to run, you must also set the direction.
 
-Returns false if the percentage is out of bounds
+If the value is out of bounds, it uses the closest value. For example `setSpeed(150)` would set the speed to be 100%
 ```c
 motor.setSpeed(50); //Set speed to 50%
 ```

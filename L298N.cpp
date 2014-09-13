@@ -38,10 +38,9 @@ void L298N::brake()
     _direction = NONE;
 }
 
-bool L298N::setSpeed(int percentage)
+void L298N::setSpeed(int percentage)
 {
-    if (percentage > 100) return false;
-    if (percentage < 0) return false;
+    percentage = constrain(percentage, 0, 100);
 
     int speed = percentage * 2.55;
     analogWrite(_EN, speed);

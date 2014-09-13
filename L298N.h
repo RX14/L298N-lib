@@ -18,7 +18,7 @@ class L298N
         void stop();
         void brake();
 
-        bool setSpeed(int percentage);
+        void setSpeed(int percentage);
         int  getSpeed();
 
         void      setDirection(direction);
