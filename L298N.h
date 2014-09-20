@@ -1,7 +1,7 @@
 /*
   L298N
   Created by RX14, June 7, 2014
-  Soon to be released into the public domain
+  Unlicensed, do what you want with it!
 */
 
 #ifndef L298N_h_RX14

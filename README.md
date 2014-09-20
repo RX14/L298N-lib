@@ -3,6 +3,8 @@ L298N-lib
 
 An Arduino library for using the L298N motor driver.
 
+This is unlicensed. Please don't shout at/sue/exorcise/kill me if it goes wrong, submit an issue or PR instead: it will make you happier in the long run.
+
 Methods
 =======
 
