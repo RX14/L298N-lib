@@ -4,7 +4,6 @@ Created by RX14, June 7, 2014
 Soon to be released into the public domain
 */
 
-#include "Arduino.h"
 #include "L298N.h"
 
 L298N::L298N(int EN, int INA, int INB)
