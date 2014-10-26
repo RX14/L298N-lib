@@ -1,5 +1,5 @@
 /*
-  L298N
+  L298N - Library for operating a L298N motor driver
   Created by RX14, June 7, 2014
   Unlicensed, do what you want with it!
 */
